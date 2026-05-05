@@ -32,3 +32,8 @@ public:
 
 // inisialisasi variabel static
 int Mahasiswa::nim = 0;
+
+// pendefinisian prosedur di luar class
+void Mahasiswa::setID() {
+    id = ++nim;
+}
