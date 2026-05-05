@@ -14,7 +14,7 @@ class mahasiswa{
         void cetak();
 };
 
-     mahasiswa :: mahasiswa(){
+mahasiswa :: mahasiswa(){
 }
 
 mahasiswa :: mahasiswa(int iNim){
@@ -35,3 +35,15 @@ void mahasiswa::cetak(){
     cout << "Nama= " << nama << endl;
 }
 
+int main() {
+    mahasiswa mhs1(102030);
+    mahasiswa mhs2("Andi");
+    mahasiswa mhs3(010203, "Santi");
+
+    //tampilkan nilai
+    cout << "Mahasiswa 1:"; mhs1.cetak();
+    cout << "Mahasiswa 2:"; mhs2.cetak();
+    cout << "Mahasiswa 3:"; mhs3.cetak();
+
+    return 0;
+}
